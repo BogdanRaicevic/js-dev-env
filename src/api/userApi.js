@@ -1,11 +1,13 @@
 import 'whatwg-fetch';
+import getBaseurl from './baseUrl';
+const baseUrl = getBaseurl();
 
 export function getUsers() {
     return get('users');
 }
 
 function get(url) {
-    return fetch(url).then(onSuccess, onError);
+    return fetch(baseUrl + url).then(onSuccess, onError);
 }
 
 // add put post and delete
