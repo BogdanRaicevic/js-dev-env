@@ -1,5 +1,5 @@
 export default function getBaseUrl() {
-    return getQueryStringParaameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+    return getQueryStringParaameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://powerful-springs-97640.herokuapp.com/';
 }
 
 function getQueryStringParaameterByName(name, url) {
